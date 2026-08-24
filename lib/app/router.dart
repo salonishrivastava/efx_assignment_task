@@ -14,17 +14,17 @@ final GoRouter appRouter = GoRouter(
       path: AppRoutes.splash,
       builder: (context, state) => const SplashPage(),
     ),
-    // GoRoute(
-    //   path: AppRoutes.login,
-    //   builder: (context, state) => const LoginPage(),
-    // ),
-    // GoRoute(
-    //   path: AppRoutes.register,
-    //   builder: (context, state) => const Step1PersonalPage(),
-    // ),
-    // GoRoute(
-    //   path: AppRoutes.dashboard,
-    //   builder: (context, state) => const DashboardPage(),
-    // ),
+    GoRoute(
+      path: AppRoutes.login,
+      builder: (context, state) => const LoginPage(),
+    ),
+    GoRoute(
+      path: AppRoutes.register,
+      builder: (context, state) => const Step1PersonalPage(),
+    ),
+    GoRoute(
+      path: AppRoutes.dashboard,
+      builder: (context, state) => const DashboardPage(),
+    ),
   ],
 );
