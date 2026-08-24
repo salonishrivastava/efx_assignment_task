@@ -111,7 +111,7 @@ dependencies:
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/salonishrivastava/efx_assignment_task.git
 ```
 
 ### Install Packages
