@@ -14,7 +14,7 @@ class _SplashPageState extends State<SplashPage> {
     super.initState();
 
     Future.delayed(
-      const Duration(seconds: 2),
+      const Duration(seconds: 4),
       () {
         context.go('/login');
       },
@@ -23,10 +23,15 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: FlutterLogo(size: 100),
-      ),
+          child: CircularProgressIndicator(
+        color: Color(0xfffffff),
+      )
+          //Image.network(
+          //  "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmttaHdxMTBqenJrYmhzNnJhbnVmeWhhanZ6YWVjYzk4NWd6NG1waiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wvtt4mtViPOSrLYNFh/giphy.gif")
+          //  NetworkImage("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmttaHdxMTBqenJrYmhzNnJhbnVmeWhhanZ6YWVjYzk4NWd6NG1waiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wvtt4mtViPOSrLYNFh/giphy.gif"),
+          ),
     );
   }
 }
