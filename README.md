@@ -51,6 +51,7 @@ Data
 - Flutter 3.27.1
 - Dart
 - flutter_bloc
+- bloc
 - equatable
 - go_router
 - shared_preferences

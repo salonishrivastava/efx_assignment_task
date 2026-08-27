@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../core/theme/app_colors.dart';
+
+//import '../../../core/theme/app_colors.dart';
+
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
 
@@ -12,9 +16,9 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-
+    print("object-------------------------------------------0");
     Future.delayed(
-      const Duration(seconds: 4),
+      const Duration(seconds: 1),
       () {
         context.go('/login');
       },
@@ -24,14 +28,13 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: CircularProgressIndicator(
-        color: Color(0xfffffff),
-      )
-          //Image.network(
-          //  "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmttaHdxMTBqenJrYmhzNnJhbnVmeWhhanZ6YWVjYzk4NWd6NG1waiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wvtt4mtViPOSrLYNFh/giphy.gif")
-          //  NetworkImage("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmttaHdxMTBqenJrYmhzNnJhbnVmeWhhanZ6YWVjYzk4NWd6NG1waiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wvtt4mtViPOSrLYNFh/giphy.gif"),
-          ),
+      body: const Center(
+        child: Icon(
+          Icons.home,
+          size: 90,
+          color: AppColors.primary,
+        ),
+      ),
     );
   }
 }
